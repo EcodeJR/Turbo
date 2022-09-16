@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Red+Hat+Mono:ital,wght@0,400;1,300&family=Ubuntu:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: fixed;
+    background: url("images/head1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+
+li,
+a,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    /*changed for space-between*/
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.scrolled {
+    height: 50px;
+    background: #24252a;
+    transition: .3s ease-in-out;
+}
+
+.logo {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    margin-right: auto;
+    transition: all 3s;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 1s;
+}
+
+.nav_links li a:hover {
+    color: #f35;
+}
+
+button {
+    margin-left: 20px;
+    /*added margin-left to make the space look even*/
+    padding: 9px 25px;
+    background: #f35;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background: transparent;
+    color: #f35;
+    transition: all 0.3s ease-in-out;
+}
+
+.headsec {
+    height: 100vh;
+    width: 100%;
+    background: transparent;
+    position: relative;
+}
+
+.homesec {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}

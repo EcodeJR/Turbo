@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(9, 12, 26, 0.6), transparent), url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.text {
+    height: 100%;
+    width: 50%;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.text span {
+    color: #f35;
+}
+
+.text p {
+    color: #fff;
+    text-align: justify;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.social {
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+.fab {
+    margin-left: 10px;
+    padding: 15px 15px;
+    font-size: 20px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.fab:hover {
+    border-radius: 50px;
+}
+
+.fa-facebook-f {
+    color: #2680fa;
+    transition: 0.5s;
+}
+
+.fa-facebook-f:hover {
+    transform: rotate(360deg);
+}
+
+.fa-twitter {
+    color: aqua;
+    transition: 0.5s;
+}
+
+.fa-twitter:hover {
+    transform: rotate(360deg);
+}
+
+.fa-instagram {
+    color: #f35;
+    transition: 0.5s;
+}
+
+.fa-instagram:hover {
+    transform: rotate(360deg);
+}
+
+.fa-linkedin-in {
+    color: #2680fa;
+    transition: 0.5s;
+}
+
+.fa-linkedin-in:hover {
+    transform: rotate(360deg);
+}
+
+.login {
+    height: 100%;
+    width: 50%;
+    background-color: #e6e8eb;
+    opacity: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.textlogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.textlogin h1 {
+    font-size: 40px;
+}
+
+.textlogin span {
+    color: #f35;
+}
+
+.textlogin h2 {
+    font-size: 25px;
+    color: #444;
+}
+
+.user {
+    margin-left: 95px;
+    margin-bottom: 20px;
+}
+
+.user input {
+    height: 55px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.pass {
+    margin-left: 95px;
+    margin-bottom: 20px;
+}
+
+.pass input {
+    height: 55px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.check {
+    display: flex;
+    margin-left: 95px;
+}
+
+.check input {
+    border: none;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.check label {
+    margin-left: 5px;
+    font-size: 17px;
+}
+
+.check a {
+    margin-left: 70px;
+    text-decoration: none;
+}
+
+.check a p {
+    font-size: 17px;
+    text-decoration: none;
+    color: #f35;
+}
+
+button {
+    height: 40px;
+    width: 308px;
+    margin-left: 95px;
+    margin-top: 30px;
+    background-color: #f35;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid #f35;
+    color: #f35;
+    background-color: #fff;
+}
+
+.reg {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 15px;
+}
+
+.reg p {
+    font-size: 15px;
+}
+
+.reg a {
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.reg a p {
+    color: #f35;
+    font-size: 15px;
+}
