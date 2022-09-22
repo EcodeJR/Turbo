@@ -1,11 +1,13 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
 }
 
 body {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-image: linear-gradient(to right, rgba(9, 12, 26, 0.6), transparent), url(bg.jpg);
     background-position: center;
     background-size: cover;
@@ -14,15 +16,14 @@ body {
 }
 
 .text {
-    height: 100%;
+    height: 100vh;
     width: 50%;
     background: transparent;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
 }
 
 .text h1 {
@@ -43,7 +44,6 @@ body {
 }
 
 .social {
-    margin-left: 50px;
     margin-top: 20px;
     padding: 10px 10px;
 }
@@ -97,7 +97,7 @@ body {
 }
 
 .login {
-    height: 100%;
+    height: 100vh;
     width: 50%;
     background-color: #e6e8eb;
     opacity: 95%;
@@ -110,7 +110,11 @@ body {
 form {
     height: 100%;
     width: 100%;
-    margin-top: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .textlogin {
@@ -135,13 +139,14 @@ form {
 }
 
 .user {
-    margin-left: 95px;
     margin-bottom: 20px;
+    height: 55px;
+    width: 80%;
 }
 
 .user input {
-    height: 55px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     border: none;
     border-radius: 5px;
     padding-left: 10px;
@@ -150,13 +155,14 @@ form {
 }
 
 .pass {
-    margin-left: 95px;
     margin-bottom: 20px;
+    height: 55px;
+    width: 80%;
 }
 
 .pass input {
-    height: 55px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     border: none;
     border-radius: 5px;
     padding-left: 10px;
@@ -166,7 +172,6 @@ form {
 
 .check {
     display: flex;
-    margin-left: 95px;
 }
 
 .check input {
@@ -194,8 +199,7 @@ form {
 
 button {
     height: 40px;
-    width: 308px;
-    margin-left: 95px;
+    width: 80%;
     margin-top: 30px;
     background-color: #f35;
     font-size: 15px;
@@ -203,6 +207,7 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    outline: none;
 }
 
 button:hover {
@@ -213,7 +218,8 @@ button:hover {
 
 .reg {
     display: flex;
-    margin-left: 150px;
+    justify-content: center;
+    align-items: center;
     margin-top: 15px;
 }
 
@@ -229,4 +235,62 @@ button:hover {
 .reg a p {
     color: #f35;
     font-size: 15px;
+}
+
+@media only screen and (max-width:768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+    }
+    .text {
+        width: 100%;
+        height: 50vh;
+    }
+    .text h1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .text p {
+        font-size: 16px;
+    }
+    .social {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 10px 10px;
+    }
+    .fab {
+        margin-left: 10px;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .login {
+        width: 100vw;
+        height: auto;
+    }
+    form {
+        width: 100%;
+    }
+    .textlogin h1 {
+        font-size: 25px;
+    }
+    .textlogin h2 {
+        font-size: 18px;
+    }
+    .reg {
+        display: flex;
+        margin-top: 15px;
+    }
+    .reg p {
+        font-size: 13px;
+    }
+    .reg a {
+        margin-left: 5px;
+    }
+    .reg a p {
+        font-size: 15px;
+    }
+    .check a {
+        margin-left: 20px;
+    }
 }
